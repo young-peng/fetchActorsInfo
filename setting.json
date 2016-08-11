@@ -1,22 +1,5 @@
 {
   "online_mongodb": {
-    "url":"121.201.58.181",
-    "port":"55001",
-    "database":"mediatube",
-    "opts":{
-      "server": {
-        "auto_reconnect": false
-      },
-      "user":"togic",
-      "pass":"togic4you!@Y",
-      "auth": {
-        "authdb":"admin",
-        "username": "togic",
-        "password": "togic4you!@Y"
-      }
-    }
-  },
-  "offline_mongodb": {
     "url":"localhost",
     "port":"27017",
     "database":"mediatube",
