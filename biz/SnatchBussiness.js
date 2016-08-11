@@ -12,13 +12,7 @@ var async = require("async");
 function snatchActorData (actor,callback) {
     var url = "https://movie.douban.com/celebrities/search?search_text="+encodeURIComponent(actor.chinese_name)+"&cat=1002";
     superagent.get(url)
-        .set({
-            "Host": "movie.douban.com",
-            "Connection": "keep-alive",
-            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36",
-            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
-            "Accept-Language": "zh-CN,zh;q=0.8"
-        })
+       
         .end(function (err,res){
             if(err) {
                 console.log("获取："+url+" 失败");
