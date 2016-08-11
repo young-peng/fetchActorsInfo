@@ -27,7 +27,7 @@ function initActor () {
 }
 
 function updateActor(actorArr) {
-    async.eachLimit(actorArr,1,function (actor, callback){
+    async.eachLimit(actorArr,2,function (actor, callback){
         console.log('演员名字是：', actor.chinese_name);
         setTimeout(function (){
             snatchActorData(actor, callback);
